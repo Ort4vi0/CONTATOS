@@ -1,12 +1,12 @@
 import { listarContatos } from "./funcoes/listar.js";
 import { AdicionarContato } from "./funcoes/adicionar.js";
+import { RemoverContato } from "./funcoes/remover.js";
+import { AtualizarContato } from "./funcoes/editar.js";
 import { prompt } from "./dep/dependencias.js";
 import { carregarDados, DBMASTER, Contatos } from "./dep/salvar.js";
-import { RemoverContato } from "./funcoes/remover.js";
 export function LimparTela() {
   console.clear();
 }
-
 export function Menu() {
   LimparTela();
   console.log("==== BEM VINDO(A) AO GERENCIAMENTO DE CONTATOS ===");
@@ -26,7 +26,7 @@ export function Menu() {
       RemoverContato()
       break;
     case "4":
-      AtualizarContato();
+      AtualizarContato()
       break;
     case "0":
       process.exit()

@@ -1,16 +1,15 @@
 import { LimparTela } from "../Contatos.js";
 import { prompt, Voltar } from "../dep/dependencias.js";
 import { Contatos, contatos, DBMASTER, salvarDados } from "../dep/salvar.js";
-import { listarContatosDeletar } from "./listar.js";
+import { listarContatos2 } from "./listar.js";
 
 export function RemoverContato() {
   LimparTela();
   if (contatos.length <= 0) {
     console.log("Não há contatos a serem removidos");
-    prompt("Pressione ENTER para Retornar...");
     Voltar();
   } else {
-    listarContatosDeletar();
+    listarContatos2();
     const INPIDDELETE = prompt("Digte o ID do Contato que deseja remover: ");
     const idParaDeletar = parseInt(INPIDDELETE, 10);
     if (isNaN(idParaDeletar)) {

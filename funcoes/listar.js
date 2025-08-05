@@ -12,7 +12,7 @@ export function listarContatos() {
   Voltar()
 }
 
-export function listarContatosDeletar() {
+export function listarContatos2() {
   LimparTela()
   console.log("=".repeat(25) + " LISTA ATUAL " + "=".repeat(25))
   contatos.forEach((contato) => {
