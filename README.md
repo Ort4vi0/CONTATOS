@@ -17,4 +17,4 @@ Passo 2🚀: Inicie o programa com: "node Contatos.js"
 Professor [Felipe](https://github.com/FilipePaixao) e [LionsDEV](https://www.instagram.com/lionsdev/)
 
 ---
-⌨️ com ❤️ por [Otavio de Quadros](https://github.com/Ort4vi0)
+⌨️ com ❤️ por [Otavio de Quadros](https://github.com/Ort4vi0).
