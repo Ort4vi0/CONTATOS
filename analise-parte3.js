@@ -2,16 +2,16 @@ let contatos = [
     {
         id: 1, nome: 'Alice', telefone: '1234-5678', email:
             'alice@example.com'
-    }, // Pode ser considerado uma entrada
+    },
     {
         id: 2, nome: 'Bob', telefone: '8765-4321', email:
             'bob@example.com'
-    }, // Pode ser considerado uma entrada
+    },
     {
         id: 3, nome: 'Carol', telefone: '5678-1234', email:
             'carol@example.com'
-    } // Pode ser considerado uma entrada
-]; // Pode ser considerado uma entrada // Cria uma variavel chamada contatos onde armazena uma ARAY(lista) com OBJETOS DENTRO onde cada objeto tem seu ID, NOME, TELEFONE e EMAIL de algumas pessoas
+    }
+];// Cria uma variavel chamada contatos onde armazena uma ARAY(lista) com OBJETOS DENTRO onde cada objeto tem seu ID, NOME, TELEFONE e EMAIL de algumas pessoas
 
 
 function listarContatos() {

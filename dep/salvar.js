@@ -24,11 +24,11 @@ export function carregarDados(nomeArquivo, callback) {
         if (err.code === "ENOENT") {
           console.log(
             `Arquivo '${nomeArquivo}' não encontrado. Iniciando com uma lista vazia.`
-          );
+          ); // SAIDA
           callback([]);
         } else {
           console.log(`Erro ao carregar o arquivo '${nomeArquivo}':`, err);
-          callback([]);
+          callback([]); // SAIDA
         }
         return;
       }
@@ -40,7 +40,7 @@ export function carregarDados(nomeArquivo, callback) {
       } catch (parseErr) {
         console.log(
           `Erro ao analisar o JSON do arquivo '${nomeArquivo}':`,
-          parseErr
+          parseErr // SAIDA
         );
         callback([]);
       }
