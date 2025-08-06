@@ -17,6 +17,6 @@ let contatos = [
 function listarContatos() {
 contatos.forEach(contato => 
     { console.log(`ID: ${contato.id}, Nome: ${contato.nome}, Telefone: ${contato.telefone}, Email: ${contato.email}`);}); // Pode ser considerado uma saida
-} // Função onde usando o ForEach crua uma variavel temporaria denoiminada contato percorrendo a array contatos, listando cada um dos objetos (os contatos em si) formatando as informações para melhor exibição
+} // Função onde usando o ForEach cria uma variavel temporaria denoiminada contato percorrendo a array contatos, listando cada um dos objetos (os contatos em si) formatando as informações para melhor exibição
 
 listarContatos(); // Inicia a Funcao listarContatos (funcoes só iniciam se chamadas no codigo)
