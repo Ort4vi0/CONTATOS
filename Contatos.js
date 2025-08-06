@@ -13,7 +13,8 @@ export function Menu() {
   console.log(
     "Escolha uma das opcoes abaixo:\n 1 - Adicionar Contato\n 2 - Listar Contato(s)\n 3 - Remover Contato(s)\n 4 - Atualizar contato(s)\n 0 - Encerrar"
   ); // SAIDA
-  const Escolha = prompt("> "); // ENTRADA
+  const Escolha1 = prompt("> "); // ENTRADA
+  const Escolha = Escolha1.trim()
   switch (Escolha) {
     case "1":
       LimparTela();
