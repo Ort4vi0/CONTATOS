@@ -9,11 +9,11 @@ export function LimparTela() {
 }
 export function Menu() {
   LimparTela();
-  console.log("==== BEM VINDO(A) AO GERENCIAMENTO DE CONTATOS ===");
+  console.log("==== BEM VINDO(A) AO GERENCIAMENTO DE CONTATOS ==="); // SAIDA
   console.log(
     "Escolha uma das opcoes abaixo:\n 1 - Adicionar Contato\n 2 - Listar Contato(s)\n 3 - Remover Contato(s)\n 4 - Atualizar contato(s)\n 0 - Encerrar"
-  );
-  const Escolha = prompt("> ");
+  ); // SAIDA
+  const Escolha = prompt("> "); // ENTRADA
   switch (Escolha) {
     case "1":
       LimparTela();
@@ -31,13 +31,13 @@ export function Menu() {
     case "0":
       process.exit()
     default:
-      console.log("Digite uma opção válida");
+      console.log("Digite uma opção válida"); // SAIDA
       return Menu();
   }
 }
 
 export function Iniciar() {
-  console.log("Iniciando o sistema...");
+  console.log("Iniciando o sistema..."); // SAIDA
   carregarDados(DBMASTER, (torneiodata) => {
     Contatos(torneiodata);
     Menu();

@@ -4,19 +4,19 @@ import { contatos } from "../dep/salvar.js";
 
 export function listarContatos() {
   LimparTela()
-  console.log("=".repeat(25) + " LISTA ATUAL " + "=".repeat(25))
+  console.log("=".repeat(25) + " LISTA ATUAL " + "=".repeat(25)) // SAIDA
   contatos.forEach((contato) => {
     console.log(`ID: ${contato.ID} | Nome: ${contato.Nome} | Telefone: ${contato.Numero} | Email: ${contato.Email}`);
-  });
-  console.log(`Contatos Atuais: ${contatos.length}` + "\n" + "=".repeat(63))
+  }); // SAIDA
+  console.log(`Contatos Atuais: ${contatos.length}` + "\n" + "=".repeat(63)) // SAIDA
   Voltar()
 }
 
 export function listarContatos2() {
   LimparTela()
-  console.log("=".repeat(25) + " LISTA ATUAL " + "=".repeat(25))
+  console.log("=".repeat(25) + " LISTA ATUAL " + "=".repeat(25)) // SAIDA
   contatos.forEach((contato) => {
-    console.log(`ID: ${contato.ID} | Nome: ${contato.Nome} | Telefone: ${contato.Numero} | Email: ${contato.Email}`);
+    console.log(`ID: ${contato.ID} | Nome: ${contato.Nome} | Telefone: ${contato.Numero} | Email: ${contato.Email}`); // SAIDA
   });
-  console.log(`Contatos Atuais: ${contatos.length}` + "\n" + "=".repeat(63))
+  console.log(`Contatos Atuais: ${contatos.length}` + "\n" + "=".repeat(63)) // SAIDA
 }
