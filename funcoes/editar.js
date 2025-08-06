@@ -36,8 +36,8 @@ export function AtualizarContato() {
             FiltroContato.Email = NovoEmail;
         }
 
-        const Confirmar = prompt("Deseja Salvar a edicao?: (s/n)") //ENTRADA
-        Confirmar = Confirmar.toLowerCase()
+        const Confirmar2 = prompt("Deseja Salvar a edicao?: (s/n)") //ENTRADA
+        const Confirmar = Confirmar2.toLowerCase()
         if(Confirmar == "s" || Confirmar == "sim"){
             SalvarEdicao()
         } else {

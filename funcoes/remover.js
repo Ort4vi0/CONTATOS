@@ -18,8 +18,8 @@ export function RemoverContato() {
     }
     const TamanhoInicio = contatos.length
     const novosContatos = contatos.filter((contato) => contato.ID !== idParaDeletar)
-    const VDELETE = prompt(`Deseja mesmo deletar o contato de ID: ${INPIDDELETE}? (s/n)`) // ENTRADA
-    VDELETE = VDELETE.toLowerCase()
+    const VDELETE2 = prompt(`Deseja mesmo deletar o contato de ID: ${INPIDDELETE}? (s/n)`) // ENTRADA
+    const VDELETE = VDELETE2.toLowerCase()
     if(VDELETE == "s" || VDELETE == "sim"){
       Contatos(novosContatos)
     } else {
