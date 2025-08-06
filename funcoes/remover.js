@@ -18,7 +18,14 @@ export function RemoverContato() {
     }
     const TamanhoInicio = contatos.length
     const novosContatos = contatos.filter((contato) => contato.ID !== idParaDeletar)
-    Contatos(novosContatos);
+    const VDELETE = prompt(`Deseja mesmo deletar o contato de ID: ${INPIDDELETE}? (s/n)`) // ENTRADA
+    VDELETE = VDELETE.toLowerCase()
+    if(VDELETE == "s" || VDELETE == "sim"){
+      Contatos(novosContatos)
+    } else {
+      console.log("Remoção ABORTADA") // SAIDA
+      Voltar()
+    }
     if(contatos.length < TamanhoInicio){
         LimparTela()
         console.log(`Contato de ID ${idParaDeletar} deletado com sucesso`) // SAIDA

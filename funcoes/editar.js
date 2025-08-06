@@ -37,7 +37,7 @@ export function AtualizarContato() {
         }
 
         const Confirmar = prompt("Deseja Salvar a edicao?: (s/n)") //ENTRADA
-
+        Confirmar = Confirmar.toLowerCase()
         if(Confirmar == "s" || Confirmar == "sim"){
             SalvarEdicao()
         } else {
