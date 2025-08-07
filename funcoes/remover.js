@@ -10,16 +10,16 @@ export function RemoverContato() {
     Voltar();
   } else {
     listarContatos2();
-    const INPIDDELETE = prompt("Digte o ID do Contato que deseja remover: "); //ENTRADA
-    const idParaDeletar = parseInt(INPIDDELETE, 10);
+    const INPIDDELETE = prompt("Digte o ID do Contato que deseja remover: "); //ENTRADA //Armazena o ID do contato a ser removido, como uma string.
+    const idParaDeletar = parseInt(INPIDDELETE, 10); // O ID do contato após a conversão para número inteiro.
     if (isNaN(idParaDeletar)) {
       console.log("Por favor, digite um ID válido."); // SAIDA
       Voltar();
     }
-    const TamanhoInicio = contatos.length
-    const novosContatos = contatos.filter((contato) => contato.ID !== idParaDeletar)
-    const VDELETE2 = prompt(`Deseja mesmo deletar o contato de ID: ${INPIDDELETE}? (s/n)`) // ENTRADA
-    const VDELETE = VDELETE2.toLowerCase()
+    const TamanhoInicio = contatos.length //O número de contatos na lista antes da remoção, usado para verificar se a operação foi bem-sucedida.
+    const novosContatos = contatos.filter((contato) => contato.ID !== idParaDeletar) //Uma nova lista de contatos que exclui o item com o ID a ser deletado.
+    const VDELETE2 = prompt(`Deseja mesmo deletar o contato de ID: ${INPIDDELETE}? (s/n)`) // ENTRADA //Uma nova lista de contatos que exclui o item com o ID a ser deletado.
+    const VDELETE = VDELETE2.toLowerCase() //A resposta de confirmação após ser convertida para letras minúsculas.
     if(VDELETE == "s" || VDELETE == "sim"){
       Contatos(novosContatos)
     } else {
