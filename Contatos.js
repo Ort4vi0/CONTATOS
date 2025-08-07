@@ -13,8 +13,8 @@ export function Menu() {
   console.log(
     "Escolha uma das opcoes abaixo:\n 1 - Adicionar Contato\n 2 - Listar Contato(s)\n 3 - Remover Contato(s)\n 4 - Atualizar contato(s)\n 0 - Encerrar"
   ); // SAIDA
-  const Escolha1 = prompt("> "); // ENTRADA
-  const Escolha = Escolha1.trim()
+  const Escolha1 = prompt("> "); // ENTRADA // Armazena a entrada do usuário no menu principal.
+  const Escolha = Escolha1.trim() // Armazena a entrada do usuário após a remoção de espaços em branco, garantindo que a opção seja processada corretamente.
   switch (Escolha) {
     case "1":
       LimparTela();

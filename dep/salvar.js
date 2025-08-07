@@ -1,5 +1,5 @@
 import fs from 'fs';
-export let contatos = [];
+export let contatos = []; //Uma variável global que armazena a lista de todos os contatos como um array de objetos.
 export const DBMASTER = "contatos.json";
 
 export function Contatos(novosContatos) {
