@@ -35,9 +35,10 @@ export function AdicionarContato() {
   const TelefoneFormatado = FormatarTelefone(Numero); //Guarda o número de telefone após a formatação, como (XX) XXXXX-XXXX.
   
   const Email = prompt("Qual o e-mail do contato?: "); //Armazena o e-mail do contato.
-
+  const ID = Date.now()
+  const IDFORMATADO = ID / 60000
   const contato = { //    Objeto temporário que armazena todas as informações de um contato antes de ser adicionado à lista global.
-    ID: contatos.length + 1,
+    ID: Math.floor(IDFORMATADO),
     Nome: Nome,
     Numero: TelefoneFormatado,
     Email: Email,
